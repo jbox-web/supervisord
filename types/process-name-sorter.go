@@ -28,7 +28,7 @@ func (pns *ProcessNameSorter) Less(i, j int) bool {
 // Swap i-th program and j-th program
 func (pns *ProcessNameSorter) Swap(i, j int) {
 	swapF := reflect.Swapper(pns.processes)
-	swapF(i,j)
+	swapF(i, j)
 }
 
 // SortProcessInfos sorts the process information by program name

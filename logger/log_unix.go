@@ -1,3 +1,4 @@
+//go:build !windows && !nacl && !plan9
 // +build !windows,!nacl,!plan9
 
 package logger
@@ -165,7 +166,6 @@ func (bs *BackendSysLogWriter) Close() error {
 //
 // - protocol, could be tcp or udp, assuming udp as default
 // - port, if missing, by default for tcp is 6514 and for udp - 514
-//
 func parseSysLogConfig(config string) (protocol string, host string, port int, err error) {
 	fields := strings.Split(config, ":")
 	host = ""

@@ -84,7 +84,6 @@ func parseCommand(command string) ([]string, error) {
 }
 
 // create command from string or []string
-//
 func createCommand(command interface{}) (*exec.Cmd, error) {
 	args := make([]string, 0)
 	var err error = nil
