@@ -1,4 +1,4 @@
-module github.com/ochinchina/supervisord/config
+module github.com/jbox-web/supervisord/config
 
 go 1.16
 

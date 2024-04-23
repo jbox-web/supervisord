@@ -1,4 +1,4 @@
-module github.com/ochinchina/supervisord
+module github.com/jbox-web/supervisord
 
 go 1.21
 
@@ -7,21 +7,21 @@ toolchain go1.22.2
 require (
 	github.com/gorilla/mux v1.8.1
 	github.com/gorilla/rpc v1.2.1
+	github.com/jbox-web/supervisord/config v0.0.0-20240423015644-43b4d0dfe4bc
+	github.com/jbox-web/supervisord/events v0.0.0-20240423015644-43b4d0dfe4bc
+	github.com/jbox-web/supervisord/faults v0.0.0-20240423015644-43b4d0dfe4bc
+	github.com/jbox-web/supervisord/logger v0.0.0-20240423015644-43b4d0dfe4bc
+	github.com/jbox-web/supervisord/process v0.0.0-20240423015644-43b4d0dfe4bc
+	github.com/jbox-web/supervisord/signals v0.0.0-20240423015644-43b4d0dfe4bc
+	github.com/jbox-web/supervisord/types v0.0.0-20240423015644-43b4d0dfe4bc
+	github.com/jbox-web/supervisord/util v0.0.0-20240423015644-43b4d0dfe4bc
+	github.com/jbox-web/supervisord/xmlrpcclient v0.0.0-20240423015644-43b4d0dfe4bc
 	github.com/jessevdk/go-flags v1.5.0
 	github.com/kardianos/service v1.2.2
 	github.com/ochinchina/go-daemon v0.1.5
 	github.com/ochinchina/go-ini v1.0.1
 	github.com/ochinchina/go-reaper v0.0.0-20181016012355-6b11389e79fc
 	github.com/ochinchina/gorilla-xmlrpc v0.0.0-20171012055324-ecf2fe693a2c
-	github.com/ochinchina/supervisord/config v0.0.0-20230902082938-c2cae38b7454
-	github.com/ochinchina/supervisord/events v0.0.0-20230902082938-c2cae38b7454
-	github.com/ochinchina/supervisord/faults v0.0.0-20230902082938-c2cae38b7454
-	github.com/ochinchina/supervisord/logger v0.0.0-20230902082938-c2cae38b7454
-	github.com/ochinchina/supervisord/process v0.0.0-20230902082938-c2cae38b7454
-	github.com/ochinchina/supervisord/signals v0.0.0-20230902082938-c2cae38b7454
-	github.com/ochinchina/supervisord/types v0.0.0-20230902082938-c2cae38b7454
-	github.com/ochinchina/supervisord/util v0.0.0-20230902082938-c2cae38b7454
-	github.com/ochinchina/supervisord/xmlrpcclient v0.0.0-20230902082938-c2cae38b7454
 	github.com/prometheus/client_golang v1.19.0
 	github.com/sirupsen/logrus v1.9.3
 )
@@ -29,10 +29,8 @@ require (
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
-	github.com/golang/protobuf v1.5.4 // indirect
 	github.com/hashicorp/go-envparse v0.1.0 // indirect
 	github.com/kardianos/osext v0.0.0-20190222173326-2bc1f35cddc0 // indirect
-	github.com/matttproud/golang_protobuf_extensions v1.0.4 // indirect
 	github.com/ochinchina/filechangemonitor v0.3.1 // indirect
 	github.com/prometheus/client_model v0.6.1 // indirect
 	github.com/prometheus/common v0.53.0 // indirect
@@ -46,13 +44,13 @@ require (
 )
 
 replace (
-	github.com/ochinchina/supervisord/config => ./config
-	github.com/ochinchina/supervisord/events => ./events
-	github.com/ochinchina/supervisord/faults => ./faults
-	github.com/ochinchina/supervisord/logger => ./logger
-	github.com/ochinchina/supervisord/process => ./process
-	github.com/ochinchina/supervisord/signals => ./signals
-	github.com/ochinchina/supervisord/types => ./types
-	github.com/ochinchina/supervisord/util => ./util
-	github.com/ochinchina/supervisord/xmlrpcclient => ./xmlrpcclient
+	github.com/jbox-web/supervisord/config => ./config
+	github.com/jbox-web/supervisord/events => ./events
+	github.com/jbox-web/supervisord/faults => ./faults
+	github.com/jbox-web/supervisord/logger => ./logger
+	github.com/jbox-web/supervisord/process => ./process
+	github.com/jbox-web/supervisord/signals => ./signals
+	github.com/jbox-web/supervisord/types => ./types
+	github.com/jbox-web/supervisord/util => ./util
+	github.com/jbox-web/supervisord/xmlrpcclient => ./xmlrpcclient
 )

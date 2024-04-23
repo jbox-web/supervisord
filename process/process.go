@@ -15,11 +15,11 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/jbox-web/supervisord/config"
+	"github.com/jbox-web/supervisord/events"
+	"github.com/jbox-web/supervisord/logger"
+	"github.com/jbox-web/supervisord/signals"
 	"github.com/ochinchina/filechangemonitor"
-	"github.com/ochinchina/supervisord/config"
-	"github.com/ochinchina/supervisord/events"
-	"github.com/ochinchina/supervisord/logger"
-	"github.com/ochinchina/supervisord/signals"
 	"github.com/robfig/cron/v3"
 	log "github.com/sirupsen/logrus"
 )

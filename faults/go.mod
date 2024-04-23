@@ -1,4 +1,4 @@
-module github.com/ochinchina/supervisord/faults
+module github.com/jbox-web/supervisord/faults
 
 go 1.16
 

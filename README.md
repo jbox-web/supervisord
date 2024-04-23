@@ -1,4 +1,4 @@
-[![Go Report Card](https://goreportcard.com/badge/github.com/ochinchina/supervisord)](https://goreportcard.com/report/github.com/ochinchina/supervisord)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jbox-web/supervisord)](https://goreportcard.com/report/github.com/jbox-web/supervisord)
 
 # Why this project?
 
@@ -231,7 +231,7 @@ syslog_stderr_priority=err
 
 Supervisord has builtin web GUI: you can start, stop & check the status of program from the GUI. Following picture shows the default web GUI:
 
-![alt text](https://github.com/ochinchina/supervisord/blob/master/go_supervisord_gui.png)
+![alt text](https://github.com/jbox-web/supervisord/blob/master/go_supervisord_gui.png)
 
 Please note that in order to see|use Web GUI you should configure it in /etc/supervisord.conf both in [inet_http_server] (and|or [unix_http_server] if you prefer unix domain socket) and [supervisorctl]:
 

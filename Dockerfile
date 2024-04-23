@@ -5,7 +5,7 @@ RUN apk add --no-cache --update git gcc rust
 COPY . /src
 WORKDIR /src
 
-RUN CGO_ENABLED=0 go build -a -ldflags "-linkmode external -extldflags -static" -o /usr/local/bin/supervisord github.com/ochinchina/supervisord
+RUN CGO_ENABLED=0 go build -a -ldflags "-linkmode external -extldflags -static" -o /usr/local/bin/supervisord github.com/jbox-web/supervisord
 
 FROM scratch
 

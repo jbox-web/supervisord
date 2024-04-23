@@ -1,3 +1,3 @@
-module github.com/ochinchina/supervisord/types
+module github.com/jbox-web/supervisord/types
 
 go 1.16

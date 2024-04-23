@@ -8,14 +8,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ochinchina/supervisord/config"
-	"github.com/ochinchina/supervisord/events"
-	"github.com/ochinchina/supervisord/faults"
-	"github.com/ochinchina/supervisord/logger"
-	"github.com/ochinchina/supervisord/process"
-	"github.com/ochinchina/supervisord/signals"
-	"github.com/ochinchina/supervisord/types"
-	"github.com/ochinchina/supervisord/util"
+	"github.com/jbox-web/supervisord/config"
+	"github.com/jbox-web/supervisord/events"
+	"github.com/jbox-web/supervisord/faults"
+	"github.com/jbox-web/supervisord/logger"
+	"github.com/jbox-web/supervisord/process"
+	"github.com/jbox-web/supervisord/signals"
+	"github.com/jbox-web/supervisord/types"
+	"github.com/jbox-web/supervisord/util"
 
 	log "github.com/sirupsen/logrus"
 )

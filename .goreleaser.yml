@@ -92,7 +92,7 @@ archives:
 
 release:
   github:
-    owner: n-rodriguez
+    owner: jbox-web
     name: supervisord
   draft: false
   prerelease: auto
