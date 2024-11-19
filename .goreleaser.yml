@@ -32,33 +32,6 @@ builds:
       - "6"
       - "7"
 
-  - id: static
-    binary: supervisord
-    env:
-      - CGO_ENABLED=1
-    ldflags:
-      - "-linkmode external -extldflags -static"
-    flags:
-      - -tags=release
-    goos:
-      - linux
-    goarch:
-      - amd64
-      - arm64
-    overrides:
-      - goos: linux
-        goarch: amd64
-        env:
-          - CC=gcc
-
-      - goos: linux
-        goarch: arm64
-        env:
-          - CC=aarch64-linux-gnu-gcc
-    hooks:
-      post:
-        - cmd: upx "{{ .Path }}"
-
 archives:
 
   - id: archive_multi
@@ -70,16 +43,6 @@ archives:
     format_overrides:
       - goos: windows
         format: zip
-    wrap_in_directory: true
-    files:
-      - none*
-
-  - id: archive_static
-    builds: [static]
-    name_template: >-
-      {{ .ProjectName }}_static-{{ .Version }}.{{ .Os }}-{{ .Arch }}
-      {{- if .Arm }}v{{ .Arm }}{{ end }}
-    format: tar.gz
     wrap_in_directory: true
     files:
       - none*
